@@ -15,14 +15,6 @@ removeOrFail(H, [H|T], T).
 removeOrFail(H, [A|T] , [A|T_minus_H]) :-
           removeOrFail(H, T, T_minus_H).
           
-unique_street(
-  street([  h([C1, N1, P1],[])
-          , h([C2, N2, P2],[])
-          , h([C3, N3, P3],[])], [])) :-
-                  unique(C1,C2,C3),
-                  unique(N1,N2,N3),
-                  unique(P1,P2,P3).
-              
 h(C, N, P) :- colour(C), nationality(N),pet(P).
 
 colour(red).
