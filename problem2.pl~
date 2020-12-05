@@ -6,7 +6,7 @@ unq_strt --> [h(Col1, Nat1, Pet1)], [h(Col2, Nat2, Pet2)], [h(Col3, Nat3, Pet3)]
                 is_permutation([Col1, Col2, Col3], [red, blue, green]),
                 is_permutation([Nat1, Nat2, Nat3], [english, spanish, japanese]),
                 is_permutation([Pet1, Pet2, Pet3], [snail, zebra, jaguar])
-              }
+              }.
 
 is_permutation([], []).
 is_permutation([H|T], List) :-
